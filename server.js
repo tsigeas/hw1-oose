@@ -19,7 +19,7 @@ app.post("/", async(req, res) => {
         data = await ShortUrl.create({ long: req.body.long })
         res.send(confirm(data.short, true));
     } catch (err) {
-        res.send(confirm(data.short, false));
+        res.send(confirm("", false));
     }
 });
 
