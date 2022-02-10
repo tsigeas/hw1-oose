@@ -30,7 +30,6 @@ const page = (title, body) => {
   };
 
   const confirm = (name, successfull) => {
-    console.log(process.env);
     const title = "Confrimation";
     const body = successfull
       ? `  <h3>Here is your short url! 🎉</h3>
